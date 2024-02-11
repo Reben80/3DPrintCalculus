@@ -49,6 +49,8 @@ LeftRiemannSum3DPlotter.m
 - **Objective:** Explore infinite series via 3D printed nested geometric shapes.
 - **Tools:** Design and  mathematical analysis in Mathematica, and printing using the Bambu Lab slicer.
 
+![Nested Shape-Infinite Series](Nested_shapes.jpeg)
+
 
 ## Resources
 
