@@ -21,21 +21,28 @@ LeftRiemannSum3DPlotter.m
 - **Objective:** Understand Riemann sums through 3D printed models.
 - **Tools:** Mathematica for calculations and  3D modeling, and the Bambu Lab slicer for preparing models for printing on the Bambu Carbon X1.
 
-### Nested Shapes and Infinite Series
-- **Objective:** Explore infinite series via 3D printed nested geometric shapes.
-- **Tools:** Design and  mathematical analysis in Mathematica, and printing using the Bambu Lab slicer.
+![Left Riemann sum for sin(x) taking 30 rectangles](https://github.com/Reben80/3DPrintCalculus/blob/main/Reimann_Sum.jpg)
 
-### Center of Mass in 3D Models
-- **Objective:** Apply calculus to find the center of mass in 3D models and print these models for physical examination.
-- **Tools:** Mathematica for analysis, OpenSCAD for modeling, and the Bambu Lab slicer for 3D printing.
-
-### Washer and Disk Methods
+### [Washer and Disk Methods](Washer_and_Desk.md)
 - **Objective:** Explore the concepts of washer and disk methods for calculating volumes of solids of revolution.
 - **Tools:** Use OpenSCAD to create models representing solids formed by these methods, and Mathematica for the calculations.
 
-### Volume of Revolution
+
+
+### [Volume of Revolution](Volume_of_Revolution.md)
 - **Objective:** Understand the calculation of volumes of solids obtained by rotating a plane area around an axis.
 - **Tools:** Utilize Mathematica for calculating the volumes and OpenSCAD for visualizing and 3D printing these solids.
+
+
+### [Center of Mass in 3D Models](CenterofMass.md)
+- **Objective:** Apply calculus to find the center of mass in 3D models and print these models for physical examination.
+- **Tools:** Mathematica for analysis, OpenSCAD for modeling, and the Bambu Lab slicer for 3D printing.
+
+
+### [Nested Shapes and Infinite Series](infinite_series.md)
+- **Objective:** Explore infinite series via 3D printed nested geometric shapes.
+- **Tools:** Design and  mathematical analysis in Mathematica, and printing using the Bambu Lab slicer.
+
 
 ## Resources
 
