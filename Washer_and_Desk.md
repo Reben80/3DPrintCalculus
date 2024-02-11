@@ -39,11 +39,19 @@ plotSolidOfRevolution[f_, a_, b_, theta_, n_, plotType_: "both"] := Module[
 
 (* Example usage: plotSolidOfRevolution[Sqrt, 0, 4, 2*Pi, 10, "solid"] *) 
 ```
-*Example of disk method for the function f(x) = sqrt(x) over the interval [0, 2π].*
-![Disk method example](plotsolid_Shells_sqrt.jpeg)
+### Visualization of Solids of Revolution using $f(x) = \sqrt{x}$ over $[0, 2\pi]$
 
-*Example visualizing the volume of the solid of revolution for f(x) = sqrt(x) over the interval [0, 2π].*
-![Solid of revolution volume example](plotsolid_sqrt_Solid.jpeg)
+Below are two visualizations demonstrating the application of different methods to approximate and calculate the volume of a solid of revolution for the function $f(x) = \sqrt{x}$ over the interval $[0, 2\pi]$.
+
+*Approximation using the cylindrical shells method.*
+![Disk method approximation](plotsolid_Shells_sqrt.jpeg)
+
+*Exact volume calculation using the solid of revolution method.*
+![Exact volume calculation](plotsolid_sqrt_Solid.jpeg)
+
+
+These images showcase the difference between approximation techniques and exact calculations in the study of solids of revolution, providing a visual understanding of the concepts involved.
+
 
 
 
