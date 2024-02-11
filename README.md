@@ -49,9 +49,12 @@ LeftRiemannSum3DPlotter.m
 - **Objective:** Explore infinite series via 3D printed nested geometric shapes.
 - **Tools:** Design and  mathematical analysis in Mathematica, and printing using the Bambu Lab slicer.
 
+## Nested Square 
 ![Nested Shape-Infinite Series](Nested_shapes.jpeg)
 
 
+## Sierpinski 
+![Sierpinski_Triangle](sierpinski.jpeg)
 ## Resources
 
 - **Bambu Lab Slicer and Carbon X1:** Download and learn more about the Bambu Lab slicer for the Carbon X1 at [Bambu Lab Download Page](https://bambulab.com/en/download).
