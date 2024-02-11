@@ -15,7 +15,9 @@ Welcome to the GitHub repository for the 3D printing segment of our Honors Calcu
   
 ## Projects and Materials
 
-### Riemann Sum Visualization with 3D Printing
+### [Riemann Sum Visualization with 3D Printing](RiemannSum.md)
+
+LeftRiemannSum3DPlotter.m
 - **Objective:** Understand Riemann sums through 3D printed models.
 - **Tools:** Mathematica for calculations and  3D modeling, and the Bambu Lab slicer for preparing models for printing on the Bambu Carbon X1.
 
