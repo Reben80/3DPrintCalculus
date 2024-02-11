@@ -33,7 +33,7 @@ Graphics3D[
 ### Sierpinski Trinagle 
 
 
-```mathmeatica
+```mathematica
 (*Set the desired depth of the extrusion*)
 extrusionDepth = 0.05;  (*Adjust this value to change the depth*)
 
@@ -54,3 +54,26 @@ Graphics3D[{Orange, MeshPrimitives[sierpinski3D, 2]}, Boxed -> False,
 ```
 ![Sierpinski_Triangle](sierpinski.jpeg)
 
+
+## 3D Sierpinski 
+
+```mathematica
+(*Function to generate and position a 3D Sierpinski tetrahedron*)
+generatePositionedSierpinski[depth_, offset_] := 
+  Module[{mesh = SierpinskiMesh[depth, 3], transformation}, 
+   transformation = TranslationTransform[{offset, 0, 0}];
+   GeometricTransformation[mesh, transformation]];
+
+(*Create a list of 3D Sierpinski tetrahedrons with increasing \
+depth,positioned next to each other*)
+sierpinskiTetrahedrons = 
+  Table[generatePositionedSierpinski[n, 4*n], {n, 2, 
+    2}]; (*Change the range from {n,0,2} to {n,2,2} for only the last \
+step*)
+
+(*Display the tetrahedrons in a row with green color*)
+Graphics3D[{Green, Flatten[sierpinskiTetrahedrons]}, Boxed -> False, 
+ Lighting -> "Neutral"]
+
+```
+![3D Sierpinski](3d_Sierpinski.jpeg)
