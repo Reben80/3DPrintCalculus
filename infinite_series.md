@@ -28,3 +28,29 @@ Graphics3D[
 - **Tools:** Design and  mathematical analysis in Mathematica, and printing using the Bambu Lab slicer.
 
 ![Nested Shape-Infinite Series](Nested_shapes.jpeg)
+
+
+### Sierpinski Trinagle 
+
+
+```mathmeatica
+(*Set the desired depth of the extrusion*)
+extrusionDepth = 0.05;  (*Adjust this value to change the depth*)
+
+(*Generate a 2D Sierpinski triangle mesh*)
+sierpinski2D = SierpinskiMesh[3];
+
+(*Create a line segment to represent the depth,using extrusionDepth \
+for control*)
+depth = MeshRegion[{{0}, {extrusionDepth}}, Line[{1, 2}]];
+
+(*Use RegionProduct to extrude the 2D mesh into 3D by combining it \
+with the depth line segment*)
+sierpinski3D = RegionProduct[sierpinski2D, depth];
+
+(*Visualize the 3D extruded Sierpinski triangle in orange*)
+Graphics3D[{Orange, MeshPrimitives[sierpinski3D, 2]}, Boxed -> False, 
+ Lighting -> "Neutral"]
+```
+![Sierpinski_Triangle](sierpinski.jpeg)
+
