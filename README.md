@@ -17,11 +17,11 @@ Welcome to the GitHub repository for the 3D printing segment of our Honors Calcu
 
 ### Riemann Sum Visualization with 3D Printing
 - **Objective:** Understand Riemann sums through 3D printed models.
-- **Tools:** Mathematica for calculations, OpenSCAD for 3D modeling, and the Bambu Lab slicer for preparing models for printing on the Bambu Carbon X1.
+- **Tools:** Mathematica for calculations and  3D modeling, and the Bambu Lab slicer for preparing models for printing on the Bambu Carbon X1.
 
 ### Nested Shapes and Infinite Series
 - **Objective:** Explore infinite series via 3D printed nested geometric shapes.
-- **Tools:** Design in OpenSCAD, mathematical analysis in Mathematica, and printing using the Bambu Lab slicer.
+- **Tools:** Design and  mathematical analysis in Mathematica, and printing using the Bambu Lab slicer.
 
 ### Center of Mass in 3D Models
 - **Objective:** Apply calculus to find the center of mass in 3D models and print these models for physical examination.
