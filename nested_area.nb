@@ -1,0 +1,155 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5155,        145]
+NotebookOptionsPosition[      4675,        128]
+NotebookOutlinePosition[      5072,        144]
+CellTagsIndexPosition[      5029,        141]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "divideAndShade3DOnlyRed", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"divideAndShade3DOnlyRed", "[", 
+     RowBox[{"coords_", ",", "size_", ",", "depth_", ",", "n_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"half", "=", 
+         RowBox[{"size", "/", "2"}]}], ",", "shaded", ",", "bottomRight", ",", 
+        RowBox[{"thickness", "=", "depth"}]}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"n", "==", "0"}], ",", 
+         RowBox[{"Return", "[", 
+          RowBox[{"{", "}"}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"shaded", "=", 
+        RowBox[{"Cuboid", "[", 
+         RowBox[{"coords", ",", 
+          RowBox[{"coords", "+", 
+           RowBox[{"{", 
+            RowBox[{"half", ",", "half", ",", "thickness"}], "}"}]}]}], 
+         "]"}]}], ";", 
+       RowBox[{"(*", 
+        RowBox[{
+        "Create", " ", "depth", " ", "only", " ", "for", " ", "shaded", " ", 
+         RowBox[{"(", "red", ")"}], " ", "area"}], "*)"}], 
+       RowBox[{"bottomRight", "=", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"n", ">", "1"}], ",", 
+          RowBox[{"divideAndShade3DOnlyRed", "[", 
+           RowBox[{
+            RowBox[{"coords", "+", 
+             RowBox[{"{", 
+              RowBox[{"half", ",", "half", ",", "0"}], "}"}]}], ",", "half", 
+            ",", "thickness", ",", 
+            RowBox[{"n", "-", "1"}]}], "]"}], ",", 
+          RowBox[{"{", "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Flatten", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Red", ",", "shaded"}], "}"}], ",", "bottomRight"}], "}"}],
+         "]"}]}]}], "]"}]}], ";"}], "\[IndentingNewLine]"}], "\n", 
+ RowBox[{
+  RowBox[{"Graphics3D", "[", 
+   RowBox[{
+    RowBox[{"divideAndShade3DOnlyRed", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "200", ",", "10", ",", 
+      "5"}], "]"}], ",", 
+    RowBox[{"(*", 
+     RowBox[{
+      RowBox[{"Adjust", "'"}], 
+      RowBox[{"10", "'"}], " ", "to", " ", "change", " ", "the", " ", "depth",
+       " ", "as", " ", "needed"}], "*)"}], 
+    RowBox[{"PlotRange", "->", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "200"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "200"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "10"}], "}"}]}], "}"}]}], ",", 
+    RowBox[{"(*", 
+     RowBox[{
+     "Ensure", " ", "PlotRange", " ", "accommodates", " ", "the", " ", "new", 
+      " ", "depth"}], "*)"}], 
+    RowBox[{"Axes", "->", "True"}]}], "]"}], "\n"}], "\n"}], "Input",
+ CellChangeTimes->{{3.91659557578631*^9, 3.91659557579029*^9}, {
+   3.91659568087162*^9, 3.916595681351644*^9}, 3.916595743122827*^9},
+ CellLabel->"In[94]:=",ExpressionUUID->"0fad923d-b10b-4427-bc8d-af2e860a2325"],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   {RGBColor[1, 0, 0], CuboidBox[{0, 0, 0}, {100, 100, 10}]}, 
+   {RGBColor[1, 0, 0], CuboidBox[{100, 100, 0}, {150, 150, 10}]}, 
+   {RGBColor[1, 0, 0], CuboidBox[{150, 150, 0}, {175, 175, 10}]}, 
+   {RGBColor[1, 0, 0], 
+    CuboidBox[{175, 175, 0}, 
+     NCache[{Rational[375, 2], Rational[375, 2], 10}, {187.5, 187.5, 10}]]}, 
+   {RGBColor[1, 0, 0], 
+    CuboidBox[
+     NCache[{Rational[375, 2], Rational[375, 2], 0}, {187.5, 187.5, 0}], 
+     NCache[{Rational[775, 4], Rational[775, 4], 10}, {193.75, 193.75, 10}]]}},
+  Axes->True,
+  ImageSize->{386.32342781541246`, 372.11796392489714`},
+  ImageSizeRaw->Automatic,
+  PlotRange->{{0, 200}, {0, 200}, {0, 10}},
+  ViewPoint->{0.5864632458729648, 1.1564904277880803`, -3.1254744842463036`},
+  ViewVertical->{
+   0.0065784434445930505`, -0.03758150080808987, -0.9992719123836404}]], \
+"Output",
+ CellChangeTimes->{3.916595578873044*^9, 3.916595684074746*^9, 
+  3.916595745949111*^9, 3.916609408609851*^9},
+ CellLabel->"Out[96]=",ExpressionUUID->"37c1db08-1b74-4046-b115-707dc252506f"]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{213, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.0 for Mac OS X x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d2ab5bfe-aa62-4f01-ac5e-6d28d7d2b89a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3011, 79, 304, "Input",ExpressionUUID->"0fad923d-b10b-4427-bc8d-af2e860a2325"],
+Cell[3594, 103, 1065, 22, 389, "Output",ExpressionUUID->"37c1db08-1b74-4046-b115-707dc252506f"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
