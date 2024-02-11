@@ -10,7 +10,7 @@ Welcome to the GitHub repository for the 3D printing segment of our Honors Calcu
 
 - **Name:** Rebin Muhammad
 - **Email:** rebin.muhammad@montgomerycollege.edu
-- **Office Hours:**
+
 
   
 ## Projects and Materials
