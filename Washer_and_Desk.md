@@ -38,3 +38,10 @@ plotSolidOfRevolution[f_, a_, b_, theta_, n_, plotType_: "both"] := Module[
 ];
 
 (* Example usage: plotSolidOfRevolution[Sqrt, 0, 4, 2*Pi, 10, "solid"] *)
+
+
+
+![example of disk method $f(x)=\sqrt{x}$ on interval $[0,2\pi]$.](plotsolid_Shells_sqrt.jpeg)
+
+![exam volume of $f(x)=\sqrt{x}$ on interval $[0,2\pi]$.](plotsolid_sqrt_Solid.jpeg)
+
