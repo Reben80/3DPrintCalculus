@@ -16,7 +16,7 @@ This formula calculates the exact volume of the solid formed by rotating the cur
 For the **approximation** using cylindrical shells, the volume is approximated by:
 
 
-V_{\text{approx}} = 2\pi \sum_{i=1}^{n} f(x_i^*) x_i^* \Delta x
+$$  V_{\text{approx}} = 2\pi \sum_{i=1}^{n} f(x_i^*) x_i^* \Delta x $$ 
 
 
 where `Δx_i` is the width of each shell, and `x_i^*` is a representative point within the ith interval. This method provides an intuitive geometric interpretation and a practical approach for approximation, especially useful in educational contexts.
