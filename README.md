@@ -23,15 +23,19 @@ LeftRiemannSum3DPlotter.m
 
 ![Left Riemann sum for sin(x) taking 30 rectangles](https://github.com/Reben80/3DPrintCalculus/blob/main/Reimann_Sum.jpg)
 
+
+### [Volume of Revolution](Volume_of_Revolution.md)
+- **Objective:** Understand the calculation of volumes of solids obtained by rotating a plane area around an axis.
+- **Tools:** Utilize Mathematica for calculating the volumes and OpenSCAD for visualizing and 3D printing these solids.
+- 
+
 ### [Washer and Disk Methods](Washer_and_Desk.md)
 - **Objective:** Explore the concepts of washer and disk methods for calculating volumes of solids of revolution.
 - **Tools:** Use OpenSCAD to create models representing solids formed by these methods, and Mathematica for the calculations.
 
 
 
-### [Volume of Revolution](Volume_of_Revolution.md)
-- **Objective:** Understand the calculation of volumes of solids obtained by rotating a plane area around an axis.
-- **Tools:** Utilize Mathematica for calculating the volumes and OpenSCAD for visualizing and 3D printing these solids.
+
 
 
 ### [Center of Mass in 3D Models](CenterofMass.md)
