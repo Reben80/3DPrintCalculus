@@ -27,7 +27,9 @@ LeftRiemannSum3DPlotter.m
 ### [Volume of Revolution](Volume_of_Revolution.md)
 - **Objective:** Understand the calculation of volumes of solids obtained by rotating a plane area around an axis.
 - **Tools:** Utilize Mathematica for calculating the volumes and OpenSCAD for visualizing and 3D printing these solids.
-- 
+
+![Visualization of the Volume of Revolution for \(f(x) = \sqrt{x}\) around the x-axis, from 0 to 4, using the method of cylindrical shells with 10 intervals.](plotsolid_Shells_sqrt.jpeg)
+
 
 ### [Washer and Disk Methods](Washer_and_Desk.md)
 - **Objective:** Explore the concepts of washer and disk methods for calculating volumes of solids of revolution.
