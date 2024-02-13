@@ -52,7 +52,7 @@ Export["volumeOfRevolution.stl", solid];
 Below are two visualizations demonstrating the application of different methods to approximate and calculate the volume of a solid of revolution for the function $f(x) = \sqrt{x}$ over the interval $[0, 2\pi]$.
 
 *Approximation using the cylindrical shells method.*
-![Disk method approximation](plotsolid_Shells_sqrt.jpeg)
+![disk.jpeg)
 
 *Exact volume calculation using the solid of revolution method.*
 ![The Shape](revolution3d.jpeg)
