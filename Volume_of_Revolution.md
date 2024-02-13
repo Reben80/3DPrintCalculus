@@ -27,37 +27,25 @@ where `Δx_i` is the width of each shell, and `x_i^*` is a representative point 
 
 
 ```mathematica
-(* Define a function to plot the solid of revolution, cylindrical shells, or both, for a given function f over an interval [a, b]. 
-   The type of plot (solid, shells, or both) can be specified. 
-   The function also calculates the volume of the solid of revolution. *)
-plotSolidOfRevolution[f_, a_, b_, theta_, n_, plotType_: "both"] := Module[
-  {dx, vol, cc1, solid, volume, plotElements},
+(*Define the function,range,and number of disks*)f[x_] := Sin[x];
+a = 0;
+b = 3;
+n = 20; (*Increase n for a finer approximation*)
 
-  dx = (b - a)/n;
-  vol = N[Pi*Sum[f[a + (i - 1)*dx]^2*dx, {i, 1, n}]];
-  volume = NIntegrate[Pi*f[x]^2, {x, a, b}];
+(*Generate the disks*)
+disks = Table[
+   With[{x = a + (i - 0.5)*((b - a)/n), 
+     r = f[a + (i - 0.5)*((b - a)/n)]}, {Cylinder[{{x, 0, 
+        0}, {x + (b - a)/n, 0, 0}}, r]}], {i, 1, n}];
 
-  cc1 = Graphics3D[{Blue, Opacity[0.5], 
-    Table[Cylinder[{{a + (i - 1)*dx, 0, 0}, {a + i*dx, 0, 0}}, 
-      Abs[f[a + (i - 1)*dx]]], {i, 1, n}]}, Boxed -> True];
-  
-  solid = ParametricPlot3D[{x, f[x]*Cos[y], f[x]*Sin[y]}, {x, a, b}, 
-    {y, 0, theta + .01}, PlotStyle -> {Red, Opacity[0.35]}];
+(*Combine the disks into one graphics object*)
+solid = Graphics3D[Flatten@disks, Axes -> True, Boxed -> True];
 
-  (* Determine which elements to include in the plot based on the plotType argument *)
-  plotElements = Switch[plotType,
-    "solid", {solid},
-    "shells", {cc1},
-    _, {cc1, solid}
-  ];
+(*Display the solid*)
+solid
 
-  Show[plotElements, AxesLabel -> {"X", "Y", "Z"}, 
-    AxesOrigin -> {0, 0, 0}, 
-    PlotLabel -> Grid[{{"true volume = ", volume}, {"approximation = ", vol}}], 
-    ImageSize -> {350, 350}, PlotRange -> All]
-];
-
-(* Example usage: plotSolidOfRevolution[Sqrt, 0, 4, 2*Pi, 10, "solid"] *) 
+(*Export to STL*)
+Export["volumeOfRevolution.stl", solid];
 ```
 ### Visualization of Solids of Revolution using $f(x) = \sqrt{x}$ over $[0, 2\pi]$
 
