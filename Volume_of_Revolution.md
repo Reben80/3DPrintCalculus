@@ -55,7 +55,7 @@ Below are two visualizations demonstrating the application of different methods 
 ![Disk method approximation](plotsolid_Shells_sqrt.jpeg)
 
 *Exact volume calculation using the solid of revolution method.*
-![Exact volume calculation](plotsolid_sqrt_Solid.jpeg)
+![The Shape](revolution3d.jpeg)
 
 
 These images showcase the difference between approximation techniques and exact calculations in the study of solids of revolution, providing a visual understanding of the concepts involved.
