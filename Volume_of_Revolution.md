@@ -54,6 +54,17 @@ Below are two visualizations demonstrating the application of different methods 
 *Approximation using the cylindrical shells method.*
 !![Alt text for the image](disk.jpeg)
 
+
+```mathematica
+
+(* Generate a 3D plot of the revolution of Sin[t] around the x-axis over the interval from t=0 to t=3 *)
+T = RevolutionPlot3D[Sin[t], {t, 0, 3}, RevolutionAxis -> {1, 0, 0}];
+
+(* Export the generated 3D plot to an STL file named "test_closed.stl" *)
+Export["test_closed.stl", T];
+
+```
+
 *Exact volume calculation using the solid of revolution method.*
 ![Alt text for the image](revolution3d.jpeg)
 
