@@ -1,0 +1,219 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7962,        211]
+NotebookOptionsPosition[      7387,        193]
+NotebookOutlinePosition[      7785,        209]
+CellTagsIndexPosition[      7742,        206]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "divideAndShade3DWithBorders", "]"}], ";"}], "\n", 
+
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"divideAndShade3DWithBorders", "[", 
+     RowBox[{
+     "coords_", ",", "size_", ",", "depth_", ",", "n_", ",", 
+      "borderThickness_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"half", "=", 
+         RowBox[{"size", "/", "2"}]}], ",", "shaded", ",", "bottomRight", ",", 
+        RowBox[{"borderDepth", "=", 
+         RowBox[{"depth", "+", "borderThickness"}]}], ",", 
+        RowBox[{"(*", 
+         RowBox[{"Increase", " ", "depth", " ", "for", " ", "border"}], 
+         "*)"}], 
+        RowBox[{"shadedDepth", "=", "depth"}], ",", 
+        RowBox[{"(*", 
+         RowBox[{"Depth", " ", "for", " ", "shaded", " ", "area"}], "*)"}], 
+        "shadedArea", ",", "borderArea"}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"n", "==", "0"}], ",", 
+         RowBox[{"Return", "[", 
+          RowBox[{"{", "}"}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+        "Define", " ", "the", " ", "shaded", " ", "area", " ", "with", " ", 
+         "specified", " ", "depth"}], "*)"}], 
+       RowBox[{"shadedArea", "=", 
+        RowBox[{"Cuboid", "[", 
+         RowBox[{"coords", ",", 
+          RowBox[{"coords", "+", 
+           RowBox[{"{", 
+            RowBox[{"half", ",", "half", ",", "shadedDepth"}], "}"}]}]}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+        "Define", " ", "the", " ", "border", " ", "area", " ", "slightly", 
+         " ", "larger", " ", "than", " ", "the", " ", "shaded", " ", "area", 
+         " ", "to", " ", "create", " ", "a", " ", "border", " ", "effect"}], 
+        "*)"}], 
+       RowBox[{"borderArea", "=", 
+        RowBox[{"Cuboid", "[", 
+         RowBox[{
+          RowBox[{"coords", "-", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"borderThickness", "/", "2"}], ",", 
+             RowBox[{"borderThickness", "/", "2"}], ",", "0"}], "}"}]}], ",", 
+          
+          RowBox[{"coords", "+", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"half", "+", 
+              RowBox[{"borderThickness", "/", "2"}]}], ",", 
+             RowBox[{"half", "+", 
+              RowBox[{"borderThickness", "/", "2"}]}], ",", "borderDepth"}], 
+            "}"}]}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{"Recursively", " ", "process", " ", "the", " ", "bottom"}], 
+         "-", 
+         RowBox[{"right", " ", "square"}]}], "*)"}], 
+       RowBox[{"bottomRight", "=", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"n", ">", "1"}], ",", 
+          RowBox[{"divideAndShade3DWithBorders", "[", 
+           RowBox[{
+            RowBox[{"coords", "+", 
+             RowBox[{"{", 
+              RowBox[{"half", ",", "half", ",", "0"}], "}"}]}], ",", "half", 
+            ",", "shadedDepth", ",", 
+            RowBox[{"n", "-", "1"}], ",", "borderThickness"}], "]"}], ",", 
+          RowBox[{"{", "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Flatten", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"EdgeForm", "[", "]"}], ",", "Gray", ",", "borderArea"}], 
+           "}"}], ",", 
+          RowBox[{"(*", 
+           RowBox[{
+           "Draw", " ", "border", " ", "area", " ", "behind", " ", "shaded", 
+            " ", "area"}], "*)"}], 
+          RowBox[{"{", 
+           RowBox[{"Red", ",", "shadedArea"}], "}"}], ",", 
+          RowBox[{"(*", 
+           RowBox[{
+           "Draw", " ", "shaded", " ", "area", " ", "on", " ", "top", " ", 
+            "of", " ", "the", " ", "border"}], "*)"}], "bottomRight"}], "}"}],
+         "]"}]}]}], "]"}]}], ";"}], "\[IndentingNewLine]", "\n", 
+  RowBox[{"(*", 
+   RowBox[{"Generate", " ", "the", " ", "3", "D", " ", "graphics"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"model", "=", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{
+     RowBox[{"divideAndShade3DWithBorders", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "200", ",", "10", ",", 
+       "5", ",", "2"}], "]"}], ",", 
+     RowBox[{"(*", 
+      RowBox[{
+      "Adjust", " ", "last", " ", "parameter", " ", "to", " ", "change", " ", 
+       "border", " ", "thickness"}], "*)"}], 
+     RowBox[{"PlotRange", "->", "All"}], ",", 
+     RowBox[{"Axes", "->", "True"}], ",", 
+     RowBox[{"Lighting", "->", "\"\<Neutral\>\""}]}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Export", " ", "the", " ", "model", " ", "to", " ", "an", " ", "STL", " ", 
+    "file"}], "*)"}]}], "\n", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<divideAndShade3DModel.stl\>\"", ",", "model"}], 
+  "]"}], "\n"}], "Input",
+ CellChangeTimes->{{3.916596028098299*^9, 3.916596034170575*^9}, 
+   3.916596128723735*^9},
+ CellLabel->"In[90]:=",ExpressionUUID->"1134452b-fb6d-4790-89ce-272bb262dfa3"],
+
+Cell[BoxData[
+ Graphics3DBox[
+  {GrayLevel[0.5], EdgeForm[None], CuboidBox[{-1, -1, 0}, {101, 101, 12}], 
+   {RGBColor[1, 0, 0], CuboidBox[{0, 0, 0}, {100, 100, 10}]}, 
+   {GrayLevel[0.5], EdgeForm[None], CuboidBox[{99, 99, 0}, {151, 151, 12}], 
+    {RGBColor[1, 0, 0], CuboidBox[{100, 100, 0}, {150, 150, 10}]}, 
+    {GrayLevel[0.5], EdgeForm[None], CuboidBox[{149, 149, 0}, {176, 176, 12}], 
+     {RGBColor[1, 0, 0], CuboidBox[{150, 150, 0}, {175, 175, 10}]}, 
+     {GrayLevel[0.5], EdgeForm[None], 
+      CuboidBox[{174, 174, 0}, 
+       NCache[{Rational[377, 2], Rational[377, 2], 12}, {
+        188.5, 188.5, 12}]], 
+      {RGBColor[1, 0, 0], 
+       CuboidBox[{175, 175, 0}, 
+        NCache[{Rational[375, 2], Rational[375, 2], 10}, {
+         187.5, 187.5, 10}]]}, 
+      {GrayLevel[0.5], EdgeForm[None], 
+       CuboidBox[
+        NCache[{Rational[373, 2], Rational[373, 2], 0}, {186.5, 186.5, 0}], 
+        NCache[{Rational[779, 4], Rational[779, 4], 12}, {
+         194.75, 194.75, 12}]], 
+       {RGBColor[1, 0, 0], 
+        CuboidBox[
+         NCache[{Rational[375, 2], Rational[375, 2], 0}, {187.5, 187.5, 0}], 
+         NCache[{Rational[775, 4], Rational[775, 4], 10}, {
+          193.75, 193.75, 10}]]}}}}}},
+  Axes->True,
+  Lighting->"Neutral",
+  PlotRange->All]], "Output",
+ CellChangeTimes->{{3.9165960314288797`*^9, 3.916596036362794*^9}, {
+  3.916596130897504*^9, 3.916596138596252*^9}},
+ CellLabel->"Out[92]=",ExpressionUUID->"f78a500d-9f6a-4660-948f-4a5fac845c75"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.9166093227754517`*^9, 
+  3.916609322777733*^9}},ExpressionUUID->"4a0367d6-234f-4a75-9c03-\
+05acc71b4047"]
+},
+WindowSize->{808, 911},
+WindowMargins->{{Automatic, 355}, {11, Automatic}},
+FrontEndVersion->"14.0 for Mac OS X x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"380483be-9b0c-4d36-b3ab-838928de9415"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 5145, 130, 535, "Input",ExpressionUUID->"1134452b-fb6d-4790-89ce-272bb262dfa3"],
+Cell[5728, 154, 1486, 31, 244, "Output",ExpressionUUID->"f78a500d-9f6a-4660-948f-4a5fac845c75"]
+}, Open  ]],
+Cell[7229, 188, 154, 3, 30, "Input",ExpressionUUID->"4a0367d6-234f-4a75-9c03-05acc71b4047"]
+}
+]
+*)
+
