@@ -34,7 +34,7 @@ LeftRiemannSum3DPlotter.m
 ### [Washer Method and Vase](Washer_and_Desk.md)
 - **Objective:** Explore the concepts of washer and disk methods for calculating volumes of solids of revolution.
 - **Tools:** Use OpenSCAD to create models representing solids formed by these methods, and Mathematica for the calculations.
-
+![Washwer Method](washer_method.jpeg)
 
 
 
