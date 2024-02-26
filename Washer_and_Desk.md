@@ -19,26 +19,22 @@ This formula calculates the exact volume by integrating the difference in the sq
 #### Mathematica Implementation
 
 ```mathematica
-(* Define the functions, range, and number of washers *)
-f[x_] := Sin[x];
-g[x_] := Sin[x]/2;  (* Example inner function for demonstration *)
-a = 0;
-b = 3;
-n = 20;  (* Increase n for a finer approximation *)
+(*Define the functions*)f[x_] := Sin[x/2] + 1;
+g[x_] := 2  Cos[x/2] + 1;
 
-(* Generate the washers *)
-washers = Table[
-   With[{x = a + (i - 0.5)*((b - a)/n),
-     rOuter = f[a + (i - 0.5)*((b - a)/n)],
-     rInner = g[a + (i - 0.5)*((b - a)/n)]},
-    {Tube[{{x, 0, 0}, {x + (b - a)/n, 0, 0}}, {rOuter, rInner}]}],
-   {i, 1, n}];
+(*Visualization for outer function f[x]*)
+outer = RevolutionPlot3D[{f[x], x}, {x, 9.2, 14.4}, 
+   PlotStyle -> {Opacity[0.5], Yellow}, AxesLabel -> {"x", "y", "z"}, 
+   Mesh -> None, PlotRange -> All];
 
-(* Combine the washers into one graphics object *)
-solid = Graphics3D[Flatten@washers, Axes -> True, Boxed -> True];
+(*Visualization for inner function g[x]*)
+inner = RevolutionPlot3D[{g[x], x}, {x, 9.2, 14.4}, 
+   PlotStyle -> {Opacity[0.5], Red}, Mesh -> None, PlotRange -> All];
 
-(* Display the solid *)
-solid
-
-(* Optionally, export to STL *)
-Export["volumeOfRevolutionWashers.stl", solid];
+(*Combine the plots to visualize the solid of revolution*)
+(*Adjusting PlotRange to show from x=6 to x=16*)
+combined = 
+ Show[outer, inner, PlotRange -> Automatic, AxesOrigin -> {0, 0, 0}, 
+  PlotLabel -> "Solid of Revolution Visualization"]
+```
+!![Alt text for the image](washer_method.jpeg)
