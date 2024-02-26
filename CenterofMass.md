@@ -22,6 +22,6 @@ plot = Show[
 (*Export the plot as an SVG file*)
 Export["shape_and_centroid2.svg", plot]
 ```
-![centroid of function $\sin{x}$ from $0\le x\le \pi$
+![centroid of function $\sin{x}$ from $0\le x\le \pi$](shape_and_centroid2.jpg)
 
 Now, you have the option to import this SVG file into your favorite 3D modeling software, such as Onshape, Fusion 360, or Tinkercad. From there, you can easily create a 3D model, export it as an STL file, and get it ready for printing.
