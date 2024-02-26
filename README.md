@@ -40,10 +40,11 @@ LeftRiemannSum3DPlotter.m
 
 
 
-### [Center of Mass in 3D Models](CenterofMass.md)
+### [Centroid](CenterofMass.md)
 - **Objective:** Apply calculus to find the center of mass in 3D models and print these models for physical examination.
 - **Tools:** Mathematica for analysis, OpenSCAD for modeling, and the Bambu Lab slicer for 3D printing.
 
+![Centroid](shape_and_centroid2.jpg)
 
 ### [Nested Shapes and Infinite Series](infinite_series.md)
 - **Objective:** Explore infinite series via 3D printed nested geometric shapes.
