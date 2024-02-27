@@ -5,7 +5,8 @@
 ![Example Image](centroid.jpg)
 
 2. [Plot cross sections, this good exmaple for volumn in calclus 2](https://mathematica.stackexchange.com/questions/18849/plot-cross-sections-of-a-function)
-   ```mathematica
+   
+  ``` mathematica
    ParametricPlot3D[{v {u, Sin[u], 0} + (1 - v) {u, -Sin[u], 0},
   ConditionalExpression[v {u, Sin[u], 0} + (1 - v) {u, 0, Sin[u]},  0 <= u <= Pi],
   ConditionalExpression[v {u, -Sin[u], 0} + (1 - v) {u, 0, Sin[u]}, 0 <= u <= Pi],
@@ -19,5 +20,5 @@
   PlotRange -> Full, ImageSize -> 500, AxesOrigin -> {0, 0, 0},
   Ticks -> {{Pi/2, Pi}, {-1/2, -1}, {1/2, 1}},
   PlotRangePadding -> .2,  AxesStyle -> Thick, ImageSize -> 500]
-  ```
+  ``` 
 
