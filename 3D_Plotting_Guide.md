@@ -43,6 +43,14 @@ plot = ContourPlot3D[
    BoxRatios -> Automatic];
 ```
 
+
+## 3D Plot Image
+
+Below is the image of the 3D plot as discussed in the guide:
+
+![Equilateral  3D Plot](Equilateral.jpeg)
+
+
 This code snippet creates a 3D contour plot based on the equation \(x^2 + (\lvert y 
 vert + z)^2 = 1\), illustrating a complex geometric shape within the specified ranges for \(x\), \(y\), and \(z\). The `BoxRatios -> Automatic` option adjusts the aspect ratio of the plot box automatically to fit the shape of the plot.
 
