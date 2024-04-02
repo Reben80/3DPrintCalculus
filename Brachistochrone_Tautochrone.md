@@ -48,5 +48,33 @@ To further explore the concept of optimal paths, you need to  create multiple cu
 
 **Desmos Resource:**
 
-For students interested in exploring the Brachistochrone curve further and visualizing it dynamically, they can use the following [Desmos calculator](https://www.desmos.com/calculator/zbqk83kxuv), which generates the Brachistochrone curve based on the provided equations.
+For students interested in exploring the Brachistochrone curve further and visualizing it dynamically, they can use the following [Desmos calculator]([https://www.desmos.com/calculator/zbqk83kxuv](https://www.desmos.com/calculator/vrt4jd35it), which generates the Brachistochrone curve based on the provided equations.
 
+
+##  Tautochrone curve
+
+
+**Tautochrone Curve:**
+
+The Tautochrone curve, derived from the Greek words "tauto" (meaning same) and "chronos" (meaning time), represents a curve along which a particle will descend from any point to the lowest point in the same amount of time, regardless of the starting position. The problem of finding this curve was also solved by Johann Bernoulli around the same time as the Brachistochrone problem.
+
+**Historical Significance:**
+
+Similar to the Brachistochrone problem, the Tautochrone problem challenged mathematicians and physicists of the time, leading to significant advancements in calculus and mechanics. Johann Bernoulli's solution of the Tautochrone problem further demonstrated the power of mathematical analysis in solving complex physical problems.
+
+**Relevance in Calculus and Physics:**
+
+The Tautochrone curve illustrates fundamental principles in calculus and physics, particularly the concept of isochronism - where a system or process takes the same amount of time regardless of its initial conditions. By studying the Tautochrone curve, students gain insights into the principles of conservation of energy, harmonic motion, and the cycloidal path.
+
+Understanding the Tautochrone curve allows us to:
+- Explore the concept of isochronism and its applications in mechanics.
+- Investigate the relationship between energy, velocity, and path in simple harmonic motion.
+- Apply mathematical techniques to solve problems of motion and time optimization.
+
+**Desmos Resource:**
+
+For students interested in exploring the Tautochrone curve further and visualizing it dynamically, they can use the following [Desmos calculator](https://www.desmos.com/calculator/kjloumlpft), which generates the Tautochrone curve based on the provided equations.
+
+The Tautochrone problem offers a complementary perspective to the Brachistochrone problem, highlighting different aspects of time optimization and mathematical analysis in physics.
+
+For further exploration, you can visit the [Wikipedia page on the Tautochrone curve](https://en.wikipedia.org/wiki/Tautochrone_curve), which provides additional historical context, mathematical details, and related concepts
