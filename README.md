@@ -46,6 +46,14 @@ LeftRiemannSum3DPlotter.m
 
 ![Centroid](shape_and_centroid2.jpg)
 
+
+
+### [Brachistochrone curve and Tautochrone curve][Brachistochrone_Tautochrone.md]
+
+- **Objective:** Utilize 3D printing to visualize mathematical curves such as the Brachistochrone and Tautochrone curves.
+- **Tools:** Generate parametric equations using Desmos, Mathematica, or GeoGebra. Convert curves to 3D models in Tinkercad, Fusion 360, or other modeling software. Print using Bambu Lab Studio slicer.
+
+
 ### [Nested Shapes and Infinite Series](infinite_series.md)
 - **Objective:** Explore infinite series via 3D printed nested geometric shapes.
 - **Tools:** Design and  mathematical analysis in Mathematica, and printing using the Bambu Lab slicer.
