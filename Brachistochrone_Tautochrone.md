@@ -2,6 +2,8 @@
 
 ## Brachistochrone curve
 
+![Objects_representing_tautochrone_curve](Tautochrone_curve.gif)
+
 The Brachistochrone curve, derived from the Greek words "brachistos" (meaning shortest) and "chronos" (meaning time), represents the path along which a particle will descend between two points in the least amount of time under the influence of gravity alone. The problem of finding this curve dates back to the late 17th century and was famously solved by Johann Bernoulli in 1696 as part of a challenge posed by his brother Jacob.
 
 ##### Historical Significance:
@@ -53,8 +55,7 @@ For students interested in exploring the Brachistochrone curve further and visua
 
 ##  Tautochrone curve
 
-
-**Tautochrone Curve:**
+![Objects_representing_tautochrone_curve](Objects_representing_tautochrone_curve_03.gif)
 
 The Tautochrone curve, derived from the Greek words "tauto" (meaning same) and "chronos" (meaning time), represents a curve along which a particle will descend from any point to the lowest point in the same amount of time, regardless of the starting position. The problem of finding this curve was also solved by Johann Bernoulli around the same time as the Brachistochrone problem.
 
