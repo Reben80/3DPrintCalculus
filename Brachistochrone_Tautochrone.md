@@ -73,7 +73,7 @@ Understanding the Tautochrone curve allows us to:
 
 **Desmos Resource:**
 
-For students interested in exploring the Tautochrone curve further and visualizing it dynamically, they can use the following [Desmos calculator](https://www.desmos.com/calculator/cz6cbiexk0), which generates the Tautochrone curve based on the provided equations.
+For exploring the Tautochrone curve further and visualizing it dynamically, you can use the following [Desmos calculator](https://www.desmos.com/calculator/cz6cbiexk0), which generates the Tautochrone curve based on the provided equations.
 
 The Tautochrone problem offers a complementary perspective to the Brachistochrone problem, highlighting different aspects of time optimization and mathematical analysis in physics.
 
