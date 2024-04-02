@@ -78,3 +78,28 @@ For exploring the Tautochrone curve further and visualizing it dynamically, you 
 The Tautochrone problem offers a complementary perspective to the Brachistochrone problem, highlighting different aspects of time optimization and mathematical analysis in physics.
 
 For further exploration, you can visit the [Wikipedia page on the Tautochrone curve](https://en.wikipedia.org/wiki/Tautochrone_curve), which provides additional historical context, mathematical details, and related concepts
+
+
+**Guidelines:**
+
+1. **Creating the Curves:**
+   - Use software like Desmos, Mathematica, or GeoGebra to generate the parametric equations for the Brachistochrone or Tautochrone curves.
+   - Plot and visualize the curves to ensure accuracy.
+
+2. **Saving as SVG:**
+   - Once the curves are created, save them as SVG (Scalable Vector Graphics) files.
+   - SVG format preserves the vector-based representation of the curves, essential for importing into 3D modeling software.
+
+3. **Creating the 3D Model:**
+   - Import the SVG files into 3D modeling software such as Tinkercad or Fusion 360, or any other 3D modeling program.
+   - Use appropriate tools to create the 2d shape first such as **spline** and then  extrude or loft the 2D curves, creating 3D models.
+
+
+4. **Downloading as STL:**
+   - After creating the 3D models, export them as STL files.
+   - Open the STL files in Bambu Lab Studio.
+   - In Bambu Lab Studio, choose filament and printing settings.
+   - Finally, save the 3D model as a 3MF file and send it to my email or team channel.
+
+
+
