@@ -48,7 +48,7 @@ To further explore the concept of optimal paths, you need to  create multiple cu
 
 **Desmos Resource:**
 
-For students interested in exploring the Brachistochrone curve further and visualizing it dynamically, they can use the following [Desmos calculator]([https://www.desmos.com/calculator/zbqk83kxuv](https://www.desmos.com/calculator/vrt4jd35it), which generates the Brachistochrone curve based on the provided equations.
+For students interested in exploring the Brachistochrone curve further and visualizing it dynamically, they can use the following [Desmos](https://www.desmos.com/calculator/wzoaxtwjok), which generates the Brachistochrone curve based on the provided equations.
 
 
 ##  Tautochrone curve
@@ -73,7 +73,7 @@ Understanding the Tautochrone curve allows us to:
 
 **Desmos Resource:**
 
-For students interested in exploring the Tautochrone curve further and visualizing it dynamically, they can use the following [Desmos calculator](https://www.desmos.com/calculator/kjloumlpft), which generates the Tautochrone curve based on the provided equations.
+For students interested in exploring the Tautochrone curve further and visualizing it dynamically, they can use the following [Desmos calculator](https://www.desmos.com/calculator/cz6cbiexk0), which generates the Tautochrone curve based on the provided equations.
 
 The Tautochrone problem offers a complementary perspective to the Brachistochrone problem, highlighting different aspects of time optimization and mathematical analysis in physics.
 
