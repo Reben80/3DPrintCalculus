@@ -53,7 +53,7 @@ LeftRiemannSum3DPlotter.m
 - **Objective:** Utilize 3D printing to visualize mathematical curves such as the Brachistochrone and Tautochrone curves.
 - **Tools:** Generate parametric equations using Desmos, Mathematica, or GeoGebra. Convert curves to 3D models in Tinkercad, Fusion 360, or other modeling software. Print using Bambu Lab Studio slicer.
 
-![Tautochrone Curve](tautochrone _3d.png)
+![Tautochrone Curve](tautochrone_3d.png)
 
 
 ### [Nested Shapes and Infinite Series](infinite_series.md)
