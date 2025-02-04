@@ -27,7 +27,7 @@ This assignment introduces you to **Bambu Studio** and the **3D printing workflo
 
 ### **Step 4: Final Submission**
 - Submit **one final `.3mf` file** containing all spheres.
-- **File Name:** `3DPrint_Spheres_ClassName.3mf`
+- **File Name:** `3DPrint_Spheres_Math182.3mf`
 - Upload the `.3mf` file to **MS Teams/GitHub** before the deadline.
 
 ---
